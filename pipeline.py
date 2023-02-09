@@ -134,7 +134,7 @@ def get_pipeline(
     ) 
     input_train = ParameterString(
         name="TrainData",
-        default_value=f"s3://sagemaker-eu-west-1-870401269756/amazon-forecast-mlops/data/train.csv",
+        default_value=f"s3://<your sagemaker s3 bucket>/amazon-forecast-mlops/data/train.csv",
     )
     model_output = ParameterString(name="ModelOutput", default_value=f"s3://{default_bucket}/model")
 
